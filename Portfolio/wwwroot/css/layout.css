@@ -1013,7 +1013,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
-    background: #191919;
+    background: #11ABB0;
     padding-top: 96px;
     padding-bottom: 102px;
     color: #636363;
@@ -1024,7 +1024,7 @@ call-to-action .button {
     }
 
     #contact a, #contact a:visited {
-        color: #11ABB0;
+        color: whitesmoke;
     }
 
         #contact a:hover, #contact a:focus {
