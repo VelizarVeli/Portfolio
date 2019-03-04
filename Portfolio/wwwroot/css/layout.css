@@ -12,7 +12,7 @@
    d. Resume Section
    e. Portfolio Section
    f. Call To Action Section
-   g. Testimonials Section
+   g. WisdomQuotes Section
    h. Contact Section
    i. Footer
 
@@ -807,11 +807,11 @@ call-to-action .button {
     }
 
 /* ------------------------------------------------------------------
-/* g. Testimonials
+/* g. WisdomQuotes
 /* ------------------------------------------------------------------ */
 
-#testimonials {
-    background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
+#wisdomquotes {
+    background: #1F1F1F url(../images/wisdomquotes-bg.jpg) no-repeat center center;
     background-size: cover !important;
     -webkit-background-size: cover !important;
     background-attachment: fixed;
@@ -821,27 +821,27 @@ call-to-action .button {
     overflow: hidden;
 }
 
-    #testimonials .text-container {
+    #wisdomquotes .text-container {
         padding-top: 96px;
         padding-bottom: 66px;
     }
 
-    #testimonials h1 {
+    #wisdomquotes h1 {
         font: 18px/24px 'opensans-bold', sans-serif;
         text-transform: uppercase;
         letter-spacing: 3px;
         color: #fff;
     }
 
-        #testimonials h1 span {
+        #wisdomquotes h1 span {
             display: none;
         }
 
-    #testimonials .header-col {
+    #wisdomquotes .header-col {
         padding-top: 9px;
     }
 
-        #testimonials .header-col h1:before {
+        #wisdomquotes .header-col h1:before {
             font-family: 'FontAwesome';
             content: "\f10d";
             padding-right: 10px;
@@ -853,18 +853,18 @@ call-to-action .button {
         }
 
     /*	Blockquotes */
-    #testimonials blockquote {
+    #wisdomquotes blockquote {
         margin: 0 0px 30px 0px;
         padding-left: 0;
         position: relative;
         text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
     }
 
-        #testimonials blockquote:before {
+        #wisdomquotes blockquote:before {
             content: none;
         }
 
-        #testimonials blockquote p {
+        #wisdomquotes blockquote p {
             font-family: 'librebaskerville-italic', serif;
             padding: 0;
             font-size: 24px;
@@ -872,7 +872,7 @@ call-to-action .button {
             color: #fff
         }
 
-        #testimonials blockquote cite {
+        #wisdomquotes blockquote cite {
             display: block;
             font-size: 12px;
             font-style: normal;
@@ -880,12 +880,12 @@ call-to-action .button {
             color: #fff;
         }
 
-            #testimonials blockquote cite:before {
+            #wisdomquotes blockquote cite:before {
                 content: "\2014 \0020";
             }
 
-            #testimonials blockquote cite a,
-            #testimonials blockquote cite a:visited {
+            #wisdomquotes blockquote cite a,
+            #wisdomquotes blockquote cite a:visited {
                 color: #8B9798;
                 border: none
             }
