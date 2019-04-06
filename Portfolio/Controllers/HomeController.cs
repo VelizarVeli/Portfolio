@@ -32,24 +32,7 @@ namespace Portfolio.Controllers
 
         public IActionResult DownloadResume()
         {
-            return File("~/Resume/VelizarVelikovResume.pdf", "application/pdf");
+            return File("~/Resume/Resume.pdf", "application/pdf");
         }
-
-
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
-
-        //public IActionResult Privacy()
-        //{
-        //    return View();
-        //}
-
-        //[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        //public IActionResult Error()
-        //{
-        //    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        //}
     }
 }
