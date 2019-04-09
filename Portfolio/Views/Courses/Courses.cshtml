@@ -2,79 +2,83 @@
     ViewData["Title"] = "Courses";
     Layout = "~/Views/Shared/_CoursesLayout.cshtml";
 }
-<table>
-    <thead>
-        <tr>
-            <th>Module</th>
-            <th>Course</th>
-            <th>Certificate</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><a href="https://softuni.bg/modules/2/programming-basics" target="_blank">Programming Basics</a></td>
-            <td><a href="https://softuni.bg/trainings/1658/programming-basics-with-c-sharp-april-2017" target="_blank">Programming Basics със C#</a></td>
-            <td><a href="https://softuni.bg/certificates/details/20812/9d235c49" target="_blank">Link</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://softuni.bg/modules/57/tech-module" target="_blank">Tech Module</a></td>
-            <td><a href="https://softuni.bg/trainings/1786/programming-fundamentals-january-2018" target="_blank">Programming Fundamentals</a></td>
-            <td><a href="https://softuni.bg/certificates/details/54421/517916e7" target="_blank">Link</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://softuni.bg/modules/57/tech-module" target="_blank">Tech Module</a></td>
-            <td><a href="https://softuni.bg/trainings/1714/software-technologies-october-2017" target="_blank">Software Technologies</a> </td>
-            <td><a href="https://softuni.bg/certificates/details/50778/b10e0859" target="_blank">Link</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://softuni.bg/modules/58/csharp-fundamentals" target="_blank">C# Fundamentals</a></td>
-            <td><a href="https://softuni.bg/trainings/1841/csharp-advanced-january-2018" target="_blank">C# Advanced</a></td>
-            <td><a href="https://softuni.bg/certificates/details/51431/ad24dfe3" target="_blank">Link</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://softuni.bg/modules/58/csharp-fundamentals" target="_blank">C# Fundamentals</a></td>
-            <td><a href="https://softuni.bg/trainings/1842/csharp-oop-basics-february-2018" target="_blank">C# OOP Basics</a></td>
-            <td><a href="https://softuni.bg/certificates/details/53621/790c0569" target="_blank"> Link</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://softuni.bg/modules/58/csharp-fundamentals" target="_blank">C# Fundamentals</a></td>
-            <td><a href="https://softuni.bg/trainings/2085/csharp-oop-advanced-november-2018" target="_blank">C# OOP Advanced</a></td>
-            <td><a href="https://softuni.bg/certificates/details/61773/4ff25f3e" target="_blank">Link</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://softuni.bg/modules/22/csharp-db-fundamentals" target="_blank">C# DB Fundamentals</a></td>
-            <td><a href="https://softuni.bg/trainings/1985/database-basics-mssql-may-2018" target="_blank">Databases Basics - MS SQL</a></td>
-            <td><a href="https://softuni.bg/certificates/details/55509/6eb59dbe" target="_blank">Link</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://softuni.bg/modules/22/csharp-db-fundamentals" target="_blank">C# DB Fundamentals</a></td>
-            <td><a href="https://softuni.bg/trainings/1972/databases-advanced-entity-framework-june-2018" target="_blank">Databases Advanced - Entity Framework</a></td>
-            <td><a href="https://softuni.bg/certificates/details/57788/0b6c9184" target="_blank">Link</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://softuni.bg/modules/23/csharp-web" target="_blank">C# Web</a></td>
-            <td><a href="https://softuni.bg/trainings/2086/csharp-web-development-basics-september-2018" target="_blank">C# Web Development Basics</a></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><a href="https://softuni.bg/modules/23/csharp-web" target="_blank">C# Web</a></td>
-            <td><a href="https://softuni.bg/trainings/2197/csharp-mvc-frameworks-asp-net-core-november-2018" target="_blank">C# MVC Frameworks - ASP.NET Core</a></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><a href="https://softuni.bg/modules/60/js-core" target="_blank">JS Core</a></td>
-            <td><a href="https://softuni.bg/trainings/2247/js-fundamentals-january-2019" target="_blank">JavaScript Fundamentals</a></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><a href="https://softuni.bg/modules/60/js-core" target="_blank">JS Core</a></td>
-            <td><a href="https://softuni.bg/trainings/2248/js-advanced-february-2019" target="_blank">JavaScript Advanced</a></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td><a href="https://softuni.bg/modules/60/js-core" target="_blank">JS Core</a></td>
-            <td><a href="https://softuni.bg/trainings/2249/js-applications-march-2019" target="_blank">JavaScript Applications</a></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>    
+<div class="container mt-5" >
+    <table class="table mt-5">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Link to the module in SoftUni</th>
+                <th scope="col">Link to the course in SoftUni</th>
+                <th scope="col">Certificate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://softuni.bg/modules/2/programming-basics" target="_blank">Programming Basics</a></td>
+                <td><a href="https://softuni.bg/trainings/1658/programming-basics-with-c-sharp-april-2017" target="_blank">Programming Basics със C#</a></td>
+                <td><a href="https://softuni.bg/certificates/details/20812/9d235c49" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://softuni.bg/modules/57/tech-module" target="_blank">Tech Module</a></td>
+                <td><a href="https://softuni.bg/trainings/1786/programming-fundamentals-january-2018" target="_blank">Programming Fundamentals</a></td>
+                <td><a href="https://softuni.bg/certificates/details/54421/517916e7" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://softuni.bg/modules/57/tech-module" target="_blank">Tech Module</a></td>
+                <td><a href="https://softuni.bg/trainings/1714/software-technologies-october-2017" target="_blank">Software Technologies</a> </td>
+                <td><a href="https://softuni.bg/certificates/details/50778/b10e0859" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://softuni.bg/modules/58/csharp-fundamentals" target="_blank">C# Fundamentals</a></td>
+                <td><a href="https://softuni.bg/trainings/1841/csharp-advanced-january-2018" target="_blank">C# Advanced</a></td>
+                <td><a href="https://softuni.bg/certificates/details/51431/ad24dfe3" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://softuni.bg/modules/58/csharp-fundamentals" target="_blank">C# Fundamentals</a></td>
+                <td><a href="https://softuni.bg/trainings/1842/csharp-oop-basics-february-2018" target="_blank">C# OOP Basics</a></td>
+                <td><a href="https://softuni.bg/certificates/details/53621/790c0569" target="_blank"> Link</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://softuni.bg/modules/58/csharp-fundamentals" target="_blank">C# Fundamentals</a></td>
+                <td><a href="https://softuni.bg/trainings/2085/csharp-oop-advanced-november-2018" target="_blank">C# OOP Advanced</a></td>
+                <td><a href="https://softuni.bg/certificates/details/61773/4ff25f3e" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://softuni.bg/modules/22/csharp-db-fundamentals" target="_blank">C# DB Fundamentals</a></td>
+                <td><a href="https://softuni.bg/trainings/1985/database-basics-mssql-may-2018" target="_blank">Databases Basics - MS SQL</a></td>
+                <td><a href="https://softuni.bg/certificates/details/55509/6eb59dbe" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://softuni.bg/modules/22/csharp-db-fundamentals" target="_blank">C# DB Fundamentals</a></td>
+                <td><a href="https://softuni.bg/trainings/1972/databases-advanced-entity-framework-june-2018" target="_blank">Databases Advanced - Entity Framework</a></td>
+                <td><a href="https://softuni.bg/certificates/details/57788/0b6c9184" target="_blank">Link</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://softuni.bg/modules/23/csharp-web" target="_blank">C# Web</a></td>
+                <td><a href="https://softuni.bg/trainings/2086/csharp-web-development-basics-september-2018" target="_blank">C# Web Development Basics</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://softuni.bg/modules/23/csharp-web" target="_blank">C# Web</a></td>
+                <td><a href="https://softuni.bg/trainings/2197/csharp-mvc-frameworks-asp-net-core-november-2018" target="_blank">C# MVC Frameworks - ASP.NET Core</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://softuni.bg/modules/60/js-core" target="_blank">JS Core</a></td>
+                <td><a href="https://softuni.bg/trainings/2247/js-fundamentals-january-2019" target="_blank">JavaScript Fundamentals</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://softuni.bg/modules/60/js-core" target="_blank">JS Core</a></td>
+                <td><a href="https://softuni.bg/trainings/2248/js-advanced-february-2019" target="_blank">JavaScript Advanced</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a href="https://softuni.bg/modules/60/js-core" target="_blank">JS Core</a></td>
+                <td><a href="https://softuni.bg/trainings/2249/js-applications-march-2019" target="_blank">JavaScript Applications</a></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <br />
+        <br />
+    </table>
+</div>
