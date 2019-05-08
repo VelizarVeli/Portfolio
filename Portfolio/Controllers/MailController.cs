@@ -1,35 +1,25 @@
-﻿using System.Net.Mail;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Portfolio.Mails;
+using Portfolio.Mails.Contracts;
 
 namespace Portfolio.Controllers
 {
-    [Route("api/[controller]")]
     public class MailController : Controller
     {
-        private SmtpClient smtpClient;
-        public MailController(SmtpClient smtpClient)
+        private readonly IEmailService emailService;
+
+        public MailController(IEmailService emailService)
         {
-            this.smtpClient = smtpClient;
+            ViewData["Message"] = "Your contact page.";
+            this.emailService = emailService;
         }
 
-
-        //[HttpPost]
-        //public async Task<IActionResult> Post()
-        //{
-        //    await this.smtpClient.SendMailAsync(new MailMessage(
-        //        to: "velizar.velikov@gmail.com",
-        //        subject: "Test message subject",
-        //        body: "Test message body"
-        //    ));
-
-        //    return Ok("OK");
-        //}
-
-        protected override void Dispose(bool disposing)
+        [HttpPost]
+        public async Task<IActionResult> SendMessage(EmailMessage message)
         {
-            this.smtpClient.Dispose();
-            base.Dispose(disposing);
+           emailService.Send(message);
+            return RedirectToAction("Index", "Home");
         }
-
     }
 }

@@ -1,18 +1,19 @@
-﻿using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
+using Portfolio.Mails.Contracts;
 
 namespace Portfolio.Mails
 {
-    public class EmailMessage
+    public class EmailMessage : IEmailMessage
     {
-        public EmailMessage()
-        {
-            ToAddresses = new List<EmailAddress>();
-            FromAddresses = new List<EmailAddress>();
-        }
+        [Required]
+        public string Name { get; set; }
 
-        public List<EmailAddress> ToAddresses { get; set; }
-        public List<EmailAddress> FromAddresses { get; set; }
+        [Required]
+        public string Email { get; set; }
+
         public string Subject { get; set; }
+
+        [Required]
         public string Content { get; set; }
     }
 }

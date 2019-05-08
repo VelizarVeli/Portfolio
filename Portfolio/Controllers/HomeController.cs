@@ -1,5 +1,8 @@
 ﻿using System.Diagnostics;
+using MailKit.Net.Smtp;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
+using MimeKit;
 using Portfolio.Models;
 
 namespace Portfolio.Controllers
@@ -20,8 +23,6 @@ namespace Portfolio.Controllers
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
-
             return View();
         }
 
