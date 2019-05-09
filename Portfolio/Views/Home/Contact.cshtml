@@ -14,25 +14,30 @@
     <div class="row">
         <div class="eight columns">
             <form asp-controller="Mail" asp-action="SendMessage">
+                <div asp-validation-summary="All" class="text-danger"></div>
+
                 <fieldset>
-                    <div>
-                        <label asp-for="Name">Name <span class="required">*</span></label>
-                        <input asp-for="Name" value="" id="contactName">
+                    <div class="form-group">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                        <label asp-for="Name">Name</label>
+                        <input asp-for="Name" id="contactName">
                     </div>
                     <div>
-                        <label asp-for="Email">Email <span class="required">*</span></label>
-                        <input asp-for="Email" value="" size="35" id="contactEmail">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                        <label asp-for="Email">Email</label>
+                        <input asp-for="Email" id="contactEmail">
                     </div>
                     <div>
                         <label asp-for="Subject">Subject</label>
-                        <input asp-for="Subject" value=""id="contactSubject">
+                        <input asp-for="Subject" id="contactSubject">
                     </div>
                     <div>
-                        <label asp-for="Content">Message <span class="required">*</span></label>
-                        <textarea asp-for="Content" cols="50" rows="15" id="contactMessage"></textarea>
+                        <span asp-validation-for="Content" class="text-danger"></span>
+                        <label asp-for="Content">Message</label>
+                        <textarea asp-for="Content" id="contactMessage"></textarea>
                     </div>
                     <div>
-                        <input type="submit" value="Submit" class="submit" />
+                        <button class="submit">Submit</button>
                         <span id="image-loader">
                             <img alt="" src="images/loader.gif">
                         </span>

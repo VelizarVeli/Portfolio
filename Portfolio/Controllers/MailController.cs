@@ -1,5 +1,4 @@
-﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Portfolio.Mails;
 using Portfolio.Mails.Contracts;
 
@@ -16,9 +15,9 @@ namespace Portfolio.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> SendMessage(EmailMessage message)
+        public IActionResult SendMessage(EmailMessage message)
         {
-           emailService.Send(message);
+            emailService.Send(message);
             return RedirectToAction("Index", "Home");
         }
     }

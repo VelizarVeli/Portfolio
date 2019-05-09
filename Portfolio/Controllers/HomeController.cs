@@ -1,8 +1,5 @@
 ﻿using System.Diagnostics;
-using MailKit.Net.Smtp;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Hosting;
-using MimeKit;
 using Portfolio.Models;
 
 namespace Portfolio.Controllers
